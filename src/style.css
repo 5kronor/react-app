@@ -1,0 +1,752 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.hero {
+    min-height: 100vh;
+    background: url('./assets/burger.jpg'); /* Ensure the correct path */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-top: 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.logo-img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.logo {
+    color: #e78f38;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: .3s;
+}
+.logo:hover {
+    transform: translateX(20px);
+}
+/*nav ul {
+    
+    align-items: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: #e78f38;
+    border-bottom: 2px solid #e78f38;
+}*/
+nav button {
+    background: #e78f38;
+    border: none;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: .3s;
+    margin-right: 20px;
+}
+nav button:hover {
+    scale: .8;
+}
+
+/* Content Section Styling */
+.content {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    text-align: right;
+}
+@font-face {
+    font-family: 'Volkhov';
+    src: url('Volkhov-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Volkhov', sans-serif;
+}
+p2 {
+    font-size: 21px;
+    margin-top: 0px;
+    color: #eee;
+}
+.content button {
+    margin-top: 50px;
+    background: #e78f38;
+    border: 2px solid #e78f38;
+    color: #fff;
+    padding: 18px 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: .3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 10);
+}
+.content button:hover {
+    scale: .8;
+    cursor: pointer;
+}
+.content button.know_more {
+    background: transparent;
+    border: 2px solid #e78f38;
+    color: #e78f38;
+    margin-left: 30px;
+}
+.content button.Crazy {
+    background-color: #D30C7B;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.content button.know_more:hover {
+    background: #e78f38;
+    color: #eee;
+}
+
+/* Full-Screen Page Styling */
+.center-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.yellow-box {
+    width: 100%;
+    height: 30vh;
+    top: 100px;
+    background-color: #e78f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: var(--heading-font);
+    font-size: 80px;
+    text-align: center;
+}
+.yellow-box p3 {
+    margin-left: 50vh;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.DivBild1, .DivBild2 {
+    flex: 1;
+    height: 100%;
+}
+.DivBild1 {
+    position: relative;
+    display: flex;
+    padding: 25px;
+    background-color: e78f38#951a0c;
+    margin-right: -200px;
+}
+.DivBild1 .img1 {
+    width: 100%;
+    height: 100%;
+}
+.DivBild2 {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    margin-left: 200px;
+    background-color: #38e7de00;
+}
+.DivBild2 .img2 {
+    width: 100%;
+    height: 100%;
+}
+.img2 {
+    object-fit: cover;
+}
+.container {
+    display: flex;
+    background-color: #0956a3;
+}
+.screen1, .screen2 {
+    flex: 1;
+    height: 100%;
+}
+.screen1 {
+    width: 50vh;
+    background-color: #feeee7;
+}
+.center-text1 {
+    height: 70vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0px;
+    
+    
+
+}
+.center-text1 .img1 {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.img1 {
+    object-fit: cover;
+}
+.screen2 {
+    width: 200px;
+    height: 70vh;
+    background-color: #feeee7;
+}
+@font-face {
+    font-family: 'Volkhov';
+    src: url('Volkhov-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+.text-container {
+    max-width: 600px;
+    margin: 75px auto 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.text-container h3 {
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Volkhov', sans-serif;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+.smalltextcont {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Volkhov', sans-serif;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.containerbuttons {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #00000000;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+.containerbuttons button {
+    width: 600px;
+    height: 55px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #17A5F5;
+    font-family: 'Volkhov', sans-serif;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.containerbuttons button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s ease-in-out;
+}
+
+
+
+
+
+.Meny {
+    
+    padding: 50px;
+    background-color: #FEEEE7;
+    
+    border-top: 2px solid #00000000;
+    
+    
+    
+}
+
+
+
+/*MENY SEKTIONEN*/
+
+.heading {
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #000000;
+}
+
+.heading span {
+    font-size: 55px; /* Adjust the font size as needed */
+    color: #000000;  /* Replace with your desired color */
+    font-weight: 600;
+    font-family: 'Volkhov', sans-serif;
+}
+
+.heading h2 {
+    font-size: 32px; /* Adjust to match the heading size */
+    font-family: 'Volkhov', sans-serif;
+    color: #000000;
+    font-weight: 600;
+}
+
+/*.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    
+}*/
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Optional: Adjust the spacing between the boxes */
+    flex-wrap: wrap; /* Ensures items wrap onto the next line if needed */
+    padding: 100px;
+    background-color: #ec5d2000;
+}
+
+/*.box {
+    position: center;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: 0.8rem;
+    transition: 0.3s ease;
+}*/
+
+.box {
+    text-align: center; /* Center the content inside each box */
+    position: relative;
+    justify-content: center;
+    width: 325px; /* Optional: Set a fixed width for uniform boxes */
+    border: 1px solid #000000fd;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #ffffff; /* Optional: Background color for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.box-img {
+    
+    width: 100%;
+    height: 72%;
+    padding: 10%;
+    padding-bottom: 5%;
+    background-color: #feeee7dc;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.box h2 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #000000;
+     /* Replace with your desired text color */
+     background-color: #0c219500; 
+}
+
+.box h3 {
+    color: #666; /* Replace with your desired text color */
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+    background-color: #0c219500; 
+}
+
+.box span {
+    border-bottom: 2px solid #cf1616;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.4rem; /* Adjust the font size as needed */
+    color: #cf1616; /* Replace with your desired color */
+    font-weight: 600;
+    background-color: #9e0e0e00; 
+}
+
+.box .bx {
+    background: #17A5F5; 
+    position:absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+    
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: -100%; /* Initially hidden above the page */
+    left: 20px;
+    width: 175px;
+    background: #e78f38;
+    overflow: hidden;
+    transition: top 0.5s ease; /* Smooth transition for sliding */
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0);
+    border-left: 0.5px solid rgba(255, 255, 255, 0);
+    border-right: 0.5px solid rgba(255, 255, 255, 0);
+    
+    
+    
+}
+
+/* Sidebar Menu Items */
+.sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    
+    
+    text-decoration: none;
+    color: #000000;
+    height: 80px;
+    width: 100%;
+    font-size: 26px;
+    
+    line-height: 80px;
+    display: block;
+    transition: 0.6s all;
+    
+}
+
+.sidebar ul li a:hover {
+    background: #dd7105b2;
+}
+
+.btn {
+    position: relative;
+    left: 15px; /* Center the button horizontally inside the sidebar */
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar Opened State */
+.sidebar.open {
+    top: 0; /* Slide down to show */
+    height: auto; /* Height adjusts to fit the content */
+}
+
+/* Change icon when the sidebar is open */
+.sidebar.open .btn i {
+    transform: rotate(180deg); /* Rotate the menu icon to indicate "X" */
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #17A5F5;
+    top: -88px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s ease-out;
+    opacity: 0;
+}
+
+.gotopbtn.active{
+
+    top:calc(100% - 100px);
+    opacity: 1;
+}
+
+.gotopbtn:hover{
+
+    background-color: #27aa60;
+}
+
+.gotopbtn::before,
+.gotopbtn::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #37a3fe;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    animation: waves 2s linear infinite
+}
+
+gotopbtn::after{
+    animation-delay: 1s;
+}
+
+.gotopbtn:hover::before, 
+.gotopbtn:hover::after {
+
+    border-color: #27aa60;
+}
+
+@keyframes waves{
+    to{
+        transform:scale(2);
+        opacity: 0;
+
+    }
+
+}
+
+/* Add this to your style.css file or create a new CSS file */
+
+/* Fix for React-specific elements */
+p2, p3, p4 {
+    display: block; /* Make sure these custom elements display properly */
+}
+
+/* Animation for sidebar in React */
+.sidebar {
+    transition: top 0.5s ease;
+}
+
+/* Override any conflicting styles */
+.box {
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    border-color: red;
+    background-color: #fff3e0;
+}
+
+/* Fix for buttonHover in React */
+.orderUber:hover, .orderFoodora:hover, .orderWolt:hover {
+    background-color: #106da7;
+    transform: scale(1.05);
+}
+
+/* Fix for gotopbtn animation in React */
+@keyframes waves {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.gotopbtn::before,
+.gotopbtn::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #37a3fe;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    animation: waves 2s linear infinite;
+}
+
+.gotopbtn::after {
+    animation-delay: 1s;
+}
+
+/* Cart icon styling */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon-container {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cart-icon-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .cart-icon-container i {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e78f38;
+    color: #fff;
+    font-size: 14px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: 1px solid #fff;
+  }
+  
+  /* Add to cart button styling */
+  .add-to-cart-btn {
+    background: #e78f38;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    width: 80%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-to-cart-btn:hover {
+    transform: scale(0.9);
+    background-color: #dd7105;
+  }
+  
+  .add-to-cart-btn i {
+    font-size: 18px;
+  }
+  
+  /* Animation for cart count */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .cart-count {
+    animation: pulse 1s ease-in-out;
+  }
+  
+  /* Cart notification */
+  .cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #e78f38;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .cart-notification.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .cart-notification i {
+    font-size: 20px;
+  }
